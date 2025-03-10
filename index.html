@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div class="task-container">
+        <input type="text" id="task" placeholder="Görev yazın...">
+        <input type="date" id="start-date">
+        <input type="date" id="end-date">
+        <select id="priority">
+            <option value="Low">Düşük</option>
+            <option value="Medium">Orta</option>
+            <option value="High">Yüksek</option>
+        </select>
+        <button id="add-task">Görev Ekle</button>
+    </div>
+
+    <div class="filter-buttons">
+        <button id="show-all">Tüm Görevler</button>
+        <button id="show-completed">Tamamlananlar</button>
+        <button id="show-pending">Bekleyenler</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
